@@ -48,22 +48,4 @@ El sistema deberá:
 -Ejecución simple desde 'main.py'
 -Manejo básico de errores en lectura de datos
 
----
-
-## Supuestos
--Los datos representan propiedades reales
--Los precios se muestran en pesos argentinos
--Las variables elegidas influyen en el precio
-
----
-
-## Limitaciones
--El dataset será pequeño en la versión inicial
--No se consideran factores externos en la versión inicial (como inflación, contexto económico, etc.)
--Modelo simple (regresión lineal)
-
----
-
-## Estado del proyecto
-En desarrollo (versión inicial)
 
