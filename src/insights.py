@@ -23,4 +23,13 @@ def mayor_gasto_individual(df):
     detalle = fila["detalle"]
     return f"Tu mayor gasto fue en {categoria} el día {fecha}. Gastaste ${int(monto)} en {detalle}."
 
+def top_categorias(df, n=3):
+    gasto = gasto_por_categoria(df)
+    ordenado = gasto.sort_values(ascending=False)
+    ordenado = ordenado.head(n)
+    resultado = 'Categorias con mas gastos:\n'
+    for i, (cat, monto) in enumerate(ordenado.items(), 1):
+        resultado += f'{i}. {cat}: {int(monto)}\n'
+    return resultado
+
 
