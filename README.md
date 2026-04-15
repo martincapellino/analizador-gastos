@@ -1,17 +1,40 @@
 # Sistema de Análisis de Gastos
 
-## Objetivo 
-Desarrollar un sistema simple que permita al usuario cargar sus gastos personales mediante un archivo CSV y obtener un análisis de sus hábitos de consumo
+## Descripción 
+Sistema simple que permita al usuario cargar sus gastos personales mediante un archivo CSV y obtener un análisis de sus hábitos de consumo.
 
 ---
 
-## Usuarios
--Usuario General (persona que desea analizar y optimizar sus gastos)
+## Objetivo
+
+El objetivo del proyecto es practicar:
+-Manipulación de datos con Pandas
+-Organización de código en módulos
+-Principios básicos de ingeniería de software
+-Generación de insights a partir de datos reales
+
+---
+
+## Estructura del proyecto
+
+analizador-gastos/
+│
+├── data/
+│ └── gastos.csv
+│
+├── src/
+│ ├── loader.py
+│ ├── analyzer.py
+│ ├── insights.py
+│ └── main.py
+│
+└── README.md
 
 ---
 
 ## Entradas del sistema
-El sistema recibirá un archivo .csv con los gastos del usuario, especificando en cada uno:
+
+El sistema recibirá un archivo .csv con los gastos del usuario, con el siguiente formato:
 fecha,categoria,detalle,monto
 Por ejemplo: 2026-04-01,comida,delivery,2500
 
@@ -24,28 +47,46 @@ Reglas:
 ---
 
 ## Salidas del sistema
--Cálculo del gasto total
--Análisis de gastos por categoría
--Identificación de patrones de consumo (por ejemplo, días con mayor gasto)
--Insights simples sobre posibles mejoras en los hábitos financieros.
+
+### Análisis básico
+-Gasto total
+-Gasto por categoría
+-Gasto por día de la semana
+
+### Insights generados
+-Día de mayor gasto
+-Categoría con mayor consumo
+-Mayor gasto en específico
+-Top categorías de gasto
 
 ---
 
-## Requerimientos funcionales
-El sistema deberá:
-
-1. Cargar un archivo CSV de gastos del usuario
-2. Calcular el gasto total y por categoría
-3. Identificar patrones de consumo
-4. Generar insights simples
+## Ejecución
+```bash
+python src/main.py
+```
 
 ---
 
-## Requerimientos no funcionales
--Código organizado en módulos
--Uso de Python con librerías como NumPy y Pandas
--Fácil de mantener y escalar
--Ejecución simple desde 'main.py'
--Manejo básico de errores en lectura de datos
+## Tecnologías utilizadas
+-Python
+-Numpy
+-Pandas
+
+---
+
+## Estado del proyecto
+Versión inicial. 
+En desarrollo con mejoras progresivas.
+
+---
+
+## Aprendizajes del proyecto
+-Separación en módulos (loader/analyzer/insights)
+-Uso de Pandas para análisis de datos
+-Manipulación de Series y DataFrames
+-Buenas prácticas de estructura de proyectos en Python
+-Posibilidad de utilizar mi conocimiento de Ingeniería de Software
+
 
 
